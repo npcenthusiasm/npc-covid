@@ -61,8 +61,8 @@ export default {
     // baseURL: 'http://localhost:3000', // Used as fallback if no runtime config is provided
   },
   devServer: {
-  proxy: 'https://covid-19.nchc.org.tw/'
-},
+    proxy: 'https://covid-19.nchc.org.tw/'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -72,8 +72,5 @@ export default {
     bodyParser.urlencoded({extended: true}),
     '~/api'
   ],
-  router: {
-    base: 'Covid'
-  },
   ...routerBase
 }
